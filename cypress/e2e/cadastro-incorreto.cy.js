@@ -1,5 +1,5 @@
 describe('Página de Cadastro', () => {
-  it('Preencher os campos do formulário de cadastro com dados válidos', () => {
+  it('Preencher os campos do formulário de cadastro com dados em branco', () => {
     cy.visit('https://adopet-frontend-cypress.vercel.app/');
     cy.get('[data-test="register-button"]').click();
     cy.get('[data-test="submit-button"]').click();
