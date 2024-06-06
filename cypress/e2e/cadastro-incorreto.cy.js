@@ -1,9 +1,17 @@
 describe('Página de Cadastro', () => {
-  it('Preencher os campos do formulário de cadastro com dados em branco', () => {
+
+  // ABRIR A PÁGINA DO CADASTRO
+  beforeEach(() => {
     cy.visit('https://adopet-frontend-cypress.vercel.app/');
     cy.get('[data-test="register-button"]').click();
+  })
+
+  it('Preencher os campos do formulário de cadastro com dados em branco', () => {
+    
+    //CLICANDO NO BOTÃO DE SALVAR COM OS DADOS EM BRANCO
     cy.get('[data-test="submit-button"]').click();
-    // cy.contains("É necessário informar um nome").should('be.visible');;
+    
+    //MENSAGENS ESPERADAS
     cy.contains("É necessário informar um endereço de email").should('be.visible');
     cy.contains("Crie uma senha").should('be.visible');;
     cy.contains("Repita a senha criada acima").should('be.visible');;
