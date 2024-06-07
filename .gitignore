@@ -1,4 +1,6 @@
 node_modules/
+videos/
+results/
 
 roteiro.md
 lista-exercicios.cy.js

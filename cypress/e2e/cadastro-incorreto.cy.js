@@ -2,8 +2,7 @@ describe('Página de Cadastro', () => {
 
   // ABRIR A PÁGINA DO CADASTRO
   beforeEach(() => {
-    cy.visit('https://adopet-frontend-cypress.vercel.app/');
-    cy.get('[data-test="register-button"]').click();
+    cy.botaoCadastrarUsuario();
   })
 
   it('Preencher os campos do formulário de cadastro com dados em branco', () => {

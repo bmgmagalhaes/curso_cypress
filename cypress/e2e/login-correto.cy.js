@@ -6,9 +6,7 @@ describe ("Página de Login", () => {
     })
 
     it("Preenchidos os campos com valores válidos para login", () => {
-        cy.get('[data-test="input-loginEmail"]').type("ana@email.com");
-        cy.get('[data-test="input-loginPassword"]').type("Senha123");
-        cy.get('[data-test="submit-button"]').click();
+        cy.login('ana@email.com', 'Senha123');
 
 
     })
