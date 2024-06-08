@@ -5,3 +5,4 @@ results/
 roteiro.md
 lista-exercicios.cy.js
 cypress.config.js
+cypress.env.json
