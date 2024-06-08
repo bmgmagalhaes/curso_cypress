@@ -8,10 +8,16 @@ Cypress.Commands.add('login', (email, password) => {
 
  Cypress.Commands.add('botaoCadastrarUsuario', () => { 
     
-    cy.visit('https://adopet-frontend-cypress.vercel.app/');
-    cy.get('[data-test="register-button"]').click();  
+   cy.visit('https://adopet-frontend-cypress.vercel.app');
+   cy.get('[data-test="register-button"]').click();  
 
- })
+})
+
+Cypress.Commands.add('linkFazerLogin', () => { 
+    
+   cy.visit('https://adopet-frontend-cypress.vercel.app');
+   cy.get('[data-test="login-button"]').click();
+})
 
 // ***********************************************
 // This example commands.js shows you how to
