@@ -3,6 +3,7 @@ const { defineConfig } = require("cypress");
 module.exports = defineConfig({
   projectId: "bshbpz",
   e2e: {
+    // supportFile: false,
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
@@ -12,7 +13,7 @@ module.exports = defineConfig({
     reporterOptions: {
       reportDir: 'cypress/results',
       overwrite: false,
-      html: true,
-      json: false,
+      html: false,
+      json: true,
       timestamp: "mmddyyyy_HHMMss" }
 });
